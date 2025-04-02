@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #80808029;
+    font-family: Raleway, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container-cabecalho{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cabecalho img{
+    width: 32px;
+    height: 32px;
+}
+
+.container-cabecalho p{
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+
+.limite-largura{
+    max-width: 1024px;
+}
+
+.secao-orcamento{
+    width: 100%;
+    height: auto;
+    background-image: url(../../../images/pages/agencia/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-orcamento{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.cabecalho-orcamento{
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-orcamento img{
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+}
+
+.cabecalho-orcamento h1{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.container-formulario{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px 25px;
+}
+
+.container-formulario h2{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 16px;
+}
+
+form input, form select{
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+}
+
+form input{
+    padding: 0 5px;
+}
+
+form select{
+    padding: 0 3px;
+}
+
+.campo-duplo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo-duplo div{
+    width: calc(50% - 10px);
+}
+
+.opcoes{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.opcoes div{
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+.opcoes input{
+    width: 15px;
+}
+
+.opcoes label{
+    margin-left: 8px;
+}
+
+form button{
+    width: 160px;
+    height: 32px;
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+/* --------------------------- */
+
+.secao-ofertas, .secao-anuncios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+
+.secao-ofertas h2, .secao-anuncios h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secao-ofertas h3, .secao-anuncios h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.secao-ofertas h3 span{
+    font-weight: bold;
+}
+
+.cards-ofertas{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-maior{
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.cards-menores{
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards-menores figure{
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.cards-menores figure img, .card-maior img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.cards-menores figure figcaption, .card-maior figcaption{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+    font-size: 17px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* ------------- */
+
+.cards-anuncios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.descricao-card{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 0;
+}
+
+.descricao-card h3{
+    font-size: 16px;
+}
+
+.descricao-card p{
+    color: grey;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* ------------- */
+
+footer{
+    width: 100%;
+    background-color: #5d15d1;
+    margin-top: 32px;
+}
+
+.container-rodape{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.content-rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.content-rodape h3{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.content-rodape div{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.content-rodape img{
+    width: 18px;
+}
+
+.content-rodape span{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+@media(max-width: 1100px){
+    .limite-largura{
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px){
+    form button{
+        width: 100%;
+    }
+
+    .cards-ofertas{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .cards-menores{
+        width: 100%;
+    }
+
+    .cards-ofertas figure{
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .cards-anuncios{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .container-rodape{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-rodape{
+        width: 250px;
+    }
+}
+
+@media(max-width: 540px){
+    .campo-duplo, .opcoes{
+        flex-direction: column;
+    }
+
+    .campo-duplo div, .opcoes div{
+        width: 100%;
+    }
+}
